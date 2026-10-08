@@ -1,0 +1,21 @@
+SUNRIZE - installation (Mac)
+
+Nemmest: dobbeltklik på install.command (den beder om din adgangskode).
+Den fjerner også den gamle SUNRIZE først.
+
+Eller manuelt:
+1. Luk Ableton Live.
+2. Slet den gamle SUNRIZE.vst3 og SUNRIZE.component, hvis du har dem.
+3. Kopier SUNRIZE.vst3 til:       /Library/Audio/Plug-Ins/VST3/
+   Kopier SUNRIZE.component til:  /Library/Audio/Plug-Ins/Components/
+   (Finder: Gå > Gå til mappe... og indsæt stien)
+4. Pluginnet er ikke signeret af Apple, så macOS kan blokere det.
+   Åbn Terminal og kør:
+     sudo xattr -cr /Library/Audio/Plug-Ins/VST3/SUNRIZE.vst3
+     sudo xattr -cr /Library/Audio/Plug-Ins/Components/SUNRIZE.component
+5. Åbn Ableton > Settings > Plug-Ins: slå "Use VST3 Plug-in System Folders"
+   og "Use Audio Units v2" til, og tryk "Rescan".
+6. Find "SUNRIZE" under Plug-Ins > REZONANZA i browseren.
+
+Brug: klik på den store sol for at starte/stoppe, træk i den for filteret.
+Spiller du MIDI-toner, starter den også og transponerer (C4 = som i designet).
